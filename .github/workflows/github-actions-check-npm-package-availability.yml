@@ -1,7 +1,7 @@
 name: "Check that my NPM packages are available on npmjs.com"
 on:
   schedule:
-    - cron: "17 * * * *"
+    - cron: "17 */2 * * *"
 
 jobs:
   check_availability:
