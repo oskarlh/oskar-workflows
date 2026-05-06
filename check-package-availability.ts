@@ -4,7 +4,7 @@ const { "dist-tags": { latest }, versions } = await (await fetch("https://regist
 
 const { [latest]: { dist: { tarball } } } = versions;
 
-const limit = 12 + Math.floor(5 * Math.random());
+const limit = 6 + Math.floor(3 * Math.random());
 for(let tries = 0; tries < limit; ++tries) {
     await asyncSetTimeout(400);
     await (await fetch(tarball, {cache: "no-store"})).blob();
