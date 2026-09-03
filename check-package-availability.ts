@@ -11,7 +11,7 @@ const {
 	},
 } = versions;
 
-const limit = 14 + Math.floor(3 * Math.random());
+const limit = 15 + Math.floor(3 * Math.random());
 for (let tries = 0; tries < limit; ++tries) {
 	await asyncSetTimeout(400);
 	await (await fetch(tarball, { cache: "no-store" })).blob();
